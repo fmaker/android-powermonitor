@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout android:layout_width="fill_parent" android:id="@+id/graphLayout"
+    android:layout_height="fill_parent" android:layout_weight="1"
+    android:orientation="horizontal">
+  </LinearLayout>
+
+  <LinearLayout android:layout_width="fill_parent" android:id="@+id/controlsLayout"
+    android:layout_height="match_parent" android:layout_weight="3"
+    android:orientation="horizontal" android:padding="10dp" android:gravity="center_vertical">
+
+    <LinearLayout android:layout_weight="1" android:layout_width="match_parent"
+      android:id="@+id/signalsLayout" android:layout_height="match_parent"
+      android:orientation="vertical" android:padding="10sp">
+
+      <CheckBox android:layout_height="fill_parent" android:text="@string/Power"
+        android:layout_width="wrap_content" android:id="@+id/powerCheckBox"
+        android:layout_weight="1" android:textSize="30sp" />
+
+      <CheckBox android:layout_height="fill_parent" android:text="@string/Voltage"
+        android:layout_width="wrap_content" android:id="@+id/voltageCheckBox"
+        android:layout_weight="1" android:textSize="30sp" />
+
+      <CheckBox android:layout_height="fill_parent" android:text="@string/Current"
+        android:layout_width="wrap_content" android:id="@+id/currentCheckBox"
+        android:layout_weight="1" android:textSize="30sp" />
+    </LinearLayout>
+    
+    
+  
+      <TableLayout android:layout_weight="1" android:layout_width="fill_parent"
+      android:layout_height="fill_parent" android:id="@+id/valuesTableLayout"
+      android:gravity="center_horizontal">
+  <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView android:id="@+id/timestampLabel" android:text="Time: "
+      android:textSize="30dp" android:layout_height="wrap_content"
+      android:layout_width="wrap_content" android:gravity="right"/>
+    <TextView android:id="@+id/timestampTextView"
+      android:textSize="30dp" android:layout_height="wrap_content"
+      android:layout_width="fill_parent" />
+  </TableRow>
+  <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView android:id="@+id/adcLabel" android:text="Current: "
+      android:textSize="30dp" android:layout_height="wrap_content"
+      android:layout_width="wrap_content" android:gravity="right"/>
+    <TextView android:id="@+id/currTextView"
+      android:textSize="30dp" android:layout_height="wrap_content"
+      android:layout_width="fill_parent" />
+  </TableRow>
+  <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView android:id="@+id/adcLabel" android:text="Power: "
+      android:textSize="30dp" android:layout_height="wrap_content"
+      android:layout_width="wrap_content" android:gravity="right"/>
+    <TextView android:id="@+id/powerTextView"
+      android:textSize="30dp" android:layout_height="wrap_content"
+      android:layout_width="fill_parent" />
+  </TableRow>
+  <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView android:id="@+id/adcLabel" android:text="Voltage: "
+      android:textSize="30dp" android:layout_height="wrap_content"
+      android:layout_width="wrap_content" android:gravity="right"/>
+    <TextView android:id="@+id/voltTextView"
+      android:textSize="30dp" android:layout_height="wrap_content"
+      android:layout_width="fill_parent" />
+  </TableRow>
+  </TableLayout>
+
+    <TableLayout android:layout_weight="1" android:layout_width="fill_parent"
+      android:layout_height="fill_parent" android:id="@+id/tableLayout1"
+      android:gravity="center_horizontal">
+      <TableRow android:gravity="center_horizontal"
+        android:layout_height="fill_parent" android:id="@+id/tableRow1"
+        android:layout_width="wrap_content">
+        <Button android:text="@string/ScaleP"
+          android:layout_width="wrap_content" android:layout_height="fill_parent"
+          android:textSize="28sp" android:padding="10dp" android:id="@+id/scalePButton"/>
+      </TableRow>
+      <TableRow android:gravity="center_horizontal"
+        android:layout_height="fill_parent" android:id="@+id/tableRow2"
+        android:layout_width="wrap_content">
+        <Button android:text="@string/TimeN" android:id="@+id/timeNButton"
+          android:layout_width="wrap_content" android:layout_height="fill_parent"
+          android:textSize="28sp" android:padding="10dp"/>
+        <Button android:text="@string/TimeP" android:id="@+id/timePButton"
+          android:layout_width="wrap_content" android:layout_height="fill_parent"
+          android:textSize="28sp" android:padding="10dp"/>
+      </TableRow>
+      <TableRow android:gravity="center_horizontal"
+        android:layout_height="fill_parent" android:id="@+id/tableRow3"
+        android:layout_width="wrap_content">
+        <Button android:text="@string/ScaleN" android:id="@+id/scaleNButton"
+          android:layout_width="wrap_content" android:layout_height="fill_parent"
+          android:textSize="28sp" android:padding="10dp"/>
+      </TableRow>
+    </TableLayout>
+
+  <LinearLayout android:layout_width="fill_parent" android:id="@+id/fileLayout"
+    android:layout_height="match_parent" android:layout_weight="1"
+    android:orientation="horizontal" android:padding="10dp" android:gravity="center_vertical">
+        <Button android:text="@string/Dump" android:id="@+id/dumpSDButton"
+          android:layout_width="fill_parent" android:layout_height="fill_parent"
+          android:textSize="30sp" android:padding="10dp"/>
+  </LinearLayout>
+
+</LinearLayout>
+  </LinearLayout>

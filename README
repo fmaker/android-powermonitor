@@ -1,0 +1,15 @@
+Aug 2, 2011
+Copyright Google, Inc. 2011
+
+android-powermeter contains the following files and directories:
+
+README.txt                 This file
+LICENSE.txt                License for third party code used in firmware
+app/                       PowerMeter Android application
+firmware/power_meter/      Firmware for the ADK board
+firmware/arduino_libs/     Open Accessory Protocol and USB Host Libraries
+hardware/                  Files describing the shield's design
+
+Visit the project homepage: http://code.google.com/p/android-powermonitor/
+for more information.
+
