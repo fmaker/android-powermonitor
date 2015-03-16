@@ -1,0 +1,1 @@
+The project includes an Android application as a client, firmware for the ADK and schematic for the ADK shield. It is intended to be used to measure the power consumption of Android devices.
